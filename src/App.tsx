@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import SiteContent from './components/SiteContent'
 import { useVideoScrub } from './hooks/useVideoScrub'
 
 const VIDEO_SRC = '/hero_espartano.mp4'
@@ -22,6 +23,7 @@ function App() {
       />
       <Navbar />
       <Hero />
+      <SiteContent />
     </>
   )
 }
