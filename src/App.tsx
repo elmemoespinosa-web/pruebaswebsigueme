@@ -3,8 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import { useVideoScrub } from './hooks/useVideoScrub'
 
-const VIDEO_SRC =
-  'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_041744_63efcd78-bf7d-4039-99e2-2461e8a61903.mp4'
+const VIDEO_SRC = '/hero_espartano.mp4'
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null)
