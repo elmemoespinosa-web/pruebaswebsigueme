@@ -45,6 +45,12 @@ export default function Hero() {
   return (
     <section className="relative z-[1] flex h-screen flex-col justify-end overflow-hidden px-5 pb-12 sm:px-8 md:justify-center md:px-10 md:pb-0">
       <div className="relative z-10 max-w-xl">
+        <img
+          src="/logoHero.png"
+          alt="Logo"
+          className="mb-6 h-auto w-[300px]"
+        />
+
         <p
           className="pointer-events-none mb-5 select-none sm:mb-6"
           style={{
