@@ -1,6 +1,11 @@
 import { useState } from 'react'
 
-const NAV_LINKS = ['Labs', 'Studio', 'Openings', 'Shop']
+const NAV_LINKS = [
+  { label: 'Expertise', href: '#expertise' },
+  { label: 'IA con criterio humano', href: '#ia-criterio' },
+  { label: 'Creative Sprint', href: '#sprint' },
+  { label: 'Contacto', href: '#contacto' },
+]
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -25,9 +30,9 @@ export default function Navbar() {
 
         <nav className="hidden flex-row text-[23px] text-white md:flex">
           {NAV_LINKS.map((link, index) => (
-            <span key={link} className="flex items-center">
-              <a href="#" className="transition-opacity hover:opacity-60">
-                {link}
+            <span key={link.href} className="flex items-center">
+              <a href={link.href} className="transition-opacity hover:opacity-60">
+                {link.label}
               </a>
               {index < NAV_LINKS.length - 1 && <span>,&nbsp;</span>}
             </span>
@@ -35,7 +40,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#"
+          href="#contacto"
           className="hidden text-[23px] text-white underline underline-offset-2 transition-opacity hover:opacity-60 md:block"
         >
           Get in touch
@@ -73,16 +78,16 @@ export default function Navbar() {
       >
         {NAV_LINKS.map((link) => (
           <a
-            key={link}
-            href="#"
+            key={link.href}
+            href={link.href}
             onClick={() => setMenuOpen(false)}
             className="text-[32px] font-medium text-white transition-opacity hover:opacity-60"
           >
-            {link}
+            {link.label}
           </a>
         ))}
         <a
-          href="#"
+          href="#contacto"
           onClick={() => setMenuOpen(false)}
           className="text-[32px] font-medium text-white underline underline-offset-2 transition-opacity hover:opacity-60"
         >
