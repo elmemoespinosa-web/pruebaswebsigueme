@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTypewriter } from '../hooks/useTypewriter'
 
 const TYPEWRITER_TEXT =
-  'Glad you stopped in. Good taste tends to find us. Now, what are we building?'
+  '25 años en comunicación pharma\n+ Inteligencia Artificial con criterio humano'
 
 const PILL_LABELS = [
   'Reto Sprint Creativo',
@@ -71,6 +71,7 @@ export default function Hero() {
             lineHeight: 1.35,
             fontWeight: 400,
             minHeight: '54px',
+            whiteSpace: 'pre-line',
           }}
         >
           {displayed}
