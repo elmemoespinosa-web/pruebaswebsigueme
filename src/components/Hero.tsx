@@ -4,10 +4,9 @@ import { useTypewriter } from '../hooks/useTypewriter'
 const TYPEWRITER_TEXT =
   '25 años en comunicación pharma\n+ Inteligencia Artificial con criterio humano'
 
-const PILL_LABELS = [
-  'Reto Sprint Creativo',
-  'Checa nuestro Portafolio completo',
-
+const PILL_LINKS = [
+  { label: 'Reto Sprint Creativo', href: '#sprint' },
+  { label: 'Checa nuestro Portafolio completo', href: '#' }, // TODO: URL por definir
 ]
 
 const EMAIL = 'memo.espinosa@arteypunto.com.mx'
@@ -87,14 +86,14 @@ export default function Hero() {
             transition: 'opacity 0.4s ease, transform 0.4s ease',
           }}
         >
-          {PILL_LABELS.map((label) => (
-            <button
-              key={label}
-              type="button"
+          {PILL_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
               className="mx-[0.2em] mb-[0.4em] inline-flex items-center justify-center whitespace-nowrap rounded-full border border-black/10 bg-white px-4 py-[0.3em] text-[13px] text-black transition-colors duration-200 hover:bg-black hover:text-white sm:px-5 sm:text-[15px]"
             >
-              {label}
-            </button>
+              {link.label}
+            </a>
           ))}
 
           <button
