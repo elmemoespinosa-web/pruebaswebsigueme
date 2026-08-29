@@ -56,7 +56,7 @@ export default function Hero() {
             fontFamily: 'var(--font-hand)',
             fontSize: 'clamp(18px, 4vw, 32px)',
             lineHeight: 1.3,
-            fontWeight: 650,
+            fontWeight: 550,
             color: '#fff',
           }}
         >
