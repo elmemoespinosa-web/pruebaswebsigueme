@@ -3,12 +3,14 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import SiteContent from './components/SiteContent'
 import { useVideoScrub } from './hooks/useVideoScrub'
+import { useSmoothScroll } from './hooks/useSmoothScroll'
 
 const VIDEO_SRC = '/hero_espartano2.mp4'
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null)
   useVideoScrub(videoRef)
+  useSmoothScroll()
 
   return (
     <>

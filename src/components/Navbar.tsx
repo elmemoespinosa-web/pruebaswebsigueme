@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const NAV_LINKS = [
   { label: 'Expertise', href: '#expertise' },
@@ -9,10 +9,29 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [hidden, setHidden] = useState(false)
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollingDown = currentScrollY > lastScrollY
+      setHidden(scrollingDown && currentScrollY > 80)
+      lastScrollY = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-10 flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
+      <header
+        className={`fixed top-0 left-0 right-0 z-10 flex items-center justify-between px-5 py-4 transition-transform duration-300 sm:px-8 sm:py-5 ${
+          hidden && !menuOpen ? '-translate-y-full' : 'translate-y-0'
+        }`}
+      >
         <div className="flex flex-row items-center gap-3">
           <span
             className="select-none text-[25px] text-white sm:text-[30px]"
