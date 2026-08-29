@@ -52,13 +52,12 @@ export default function Hero() {
         />
 
         <p
-          className="pointer-events-none mb-5 select-none sm:mb-6"
+          className="mb-5 select-none sm:mb-6"
           style={{
             fontSize: 'clamp(18px, 4vw, 26px)',
             lineHeight: 1.3,
             fontWeight: 400,
             color: '#fff',
-            filter: 'blur(4px)',
           }}
         >
           Inteligencia Visual

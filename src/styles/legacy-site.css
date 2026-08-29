@@ -170,8 +170,7 @@
 }
 .legacy-site .timeline-scroll img {
   height: 250px;
-  min-width: 1000px;
-  width: 100%;
+  width: auto;
   flex-shrink: 0;
   display: block;
   margin: 0 auto;
@@ -438,9 +437,6 @@
     font-size: 12px;
     width: 100%;
     text-align: center;
-  }
-  .legacy-site .timeline-scroll img {
-    min-width: 1400px;
   }
   .legacy-site .sprint-card {
     padding: 32px 24px;
