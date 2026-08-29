@@ -169,11 +169,10 @@
   animation: legacy-marquee 21s linear infinite;
 }
 .legacy-site .timeline-scroll img {
-  height: 250px;
-  width: auto;
+  width: 200vw;
+  height: auto;
   flex-shrink: 0;
   display: block;
-  margin: 0 auto;
 }
 .legacy-site .no-somos {
   text-align: center;
