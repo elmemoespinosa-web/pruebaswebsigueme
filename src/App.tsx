@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import SiteContent from './components/SiteContent'
 import { useVideoScrub } from './hooks/useVideoScrub'
 
-const VIDEO_SRC = '/hero_espartano.mp4'
+const VIDEO_SRC = '/hero_espartano2.mp4'
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null)

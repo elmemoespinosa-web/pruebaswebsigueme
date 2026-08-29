@@ -1,11 +1,15 @@
 import { useState } from 'react'
 
+<<<<<<< Updated upstream
 const NAV_LINKS = [
   { label: 'Expertise', href: '#expertise' },
   { label: 'IA con criterio humano', href: '#ia-criterio' },
   { label: 'Creative Sprint', href: '#sprint' },
   { label: 'Contacto', href: '#contacto' },
 ]
+=======
+const NAV_LINKS = ['Reto Creative Sprint']
+>>>>>>> Stashed changes
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -18,13 +22,13 @@ export default function Navbar() {
             className="text-[21px] tracking-tight text-white sm:text-[26px]"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            Mainframe&reg;
+            Arte y Punto Studio
           </span>
           <span
             className="select-none text-[25px] text-white sm:text-[30px]"
             style={{ letterSpacing: '-0.02em' }}
           >
-            ✳︎
+            
           </span>
         </div>
 
@@ -43,7 +47,7 @@ export default function Navbar() {
           href="#contacto"
           className="hidden text-[23px] text-white underline underline-offset-2 transition-opacity hover:opacity-60 md:block"
         >
-          Get in touch
+          Contacto
         </a>
 
         <button
@@ -91,7 +95,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
           className="text-[32px] font-medium text-white underline underline-offset-2 transition-opacity hover:opacity-60"
         >
-          Get in touch
+          Contacto
         </a>
       </div>
     </>

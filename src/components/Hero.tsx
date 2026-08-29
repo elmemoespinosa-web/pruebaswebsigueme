@@ -46,7 +46,7 @@ export default function Hero() {
     <section className="relative z-[1] flex h-screen flex-col justify-end overflow-hidden px-5 pb-12 sm:px-8 md:justify-center md:px-10 md:pb-0">
       <div className="relative z-10 max-w-xl">
         <img
-          src="/assets/logo/logoHero.png"
+          src="/LOGOreact.png"
           alt="Logo"
           className="mb-6 h-auto w-[300px]"
         />
@@ -61,9 +61,9 @@ export default function Hero() {
             filter: 'blur(4px)',
           }}
         >
-          Hey there, meet A.R.I.A,
+          Inteligencia Visual
           <br />
-          Mainframe&apos;s Adaptive Response Interface Agent
+          para Pharma
         </p>
 
         <p
