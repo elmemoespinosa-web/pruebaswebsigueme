@@ -53,15 +53,14 @@ export default function Hero() {
         <p
           className="mb-5 select-none sm:mb-6"
           style={{
+            fontFamily: 'var(--font-hand)',
             fontSize: 'clamp(18px, 4vw, 32px)',
             lineHeight: 1.3,
-            fontWeight: 400,
+            fontWeight: 650,
             color: '#fff',
           }}
         >
           Inteligencia Visual para Pharma
-         
-          
         </p>
 
         <p
