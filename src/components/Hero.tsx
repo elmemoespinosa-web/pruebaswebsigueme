@@ -5,13 +5,12 @@ const TYPEWRITER_TEXT =
   'Glad you stopped in. Good taste tends to find us. Now, what are we building?'
 
 const PILL_LABELS = [
-  'Pitch us an idea',
-  'Come work here',
-  'Send a brief hello',
-  'See how we operate',
+  'Reto Sprint Creativo',
+  'Checa nuestro Portafolio completo',
+
 ]
 
-const EMAIL = 'hello@mainframe.co'
+const EMAIL = 'memo.espinosa@arteypunto.com.mx'
 
 function CopyIcon() {
   return (
@@ -48,21 +47,21 @@ export default function Hero() {
         <img
           src="/LOGOreact.png"
           alt="Logo"
-          className="mb-6 h-auto w-[300px]"
+          className="mb-6 h-auto w-[580px]"
         />
 
         <p
           className="mb-5 select-none sm:mb-6"
           style={{
-            fontSize: 'clamp(18px, 4vw, 26px)',
+            fontSize: 'clamp(18px, 4vw, 32px)',
             lineHeight: 1.3,
             fontWeight: 400,
             color: '#fff',
           }}
         >
-          Inteligencia Visual
-          <br />
-          para Pharma
+          Inteligencia Visual para Pharma
+         
+          
         </p>
 
         <p
@@ -103,7 +102,7 @@ export default function Hero() {
             onClick={handleCopyEmail}
             className="mx-[0.2em] mb-[0.4em] inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white bg-transparent px-4 py-[0.3em] text-[13px] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:gap-3 sm:px-5 sm:text-[15px]"
           >
-            Reach us: <span className="underline underline-offset-1">{EMAIL}</span>
+            Contacto: <span className="underline underline-offset-1">{EMAIL}</span>
             <CopyIcon />
           </button>
         </div>
